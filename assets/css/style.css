@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+/******************************
+
+            FONTS
+
+******************************/
+
 @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 
 /******************************
@@ -13,6 +19,7 @@
 body {
     font-family: 'Barlow', sans-serif;
     letter-spacing: .05em;
+    background-color: whitesmoke;
 }
 
 header {
@@ -24,6 +31,7 @@ header {
 header img {
     max-width: 80%;
 }
+
 
 .main-nav {
     display: block;
@@ -46,8 +54,16 @@ main {
     text-align: center;
 }
 
+/* .main-area {
+    position: relative;
+} */
+
 main img {
-    max-width: 100%;
+    max-width: 90%;
+}
+
+main p {
+    padding: 5px 80px 10px;
 }
 
 footer {
@@ -77,6 +93,18 @@ footer li {
 .toTop {
     float: right;
 }
+
+.contact-card {
+    border-top: solid lightslategray 1px;
+    margin: 20px;
+    
+}
+
+.contact-card strong {
+    font-weight: bold;
+    color: darkslategrey;
+}
+
 /******************************
 
         Link Stuff
@@ -96,6 +124,46 @@ a:hover {
     color: red;
 }
 
+/******************************
+
+        Media Queries
+
+******************************/
+
+@media (min-width: 768px) {
+
+    .main-nav li {
+        display: inline-block;  
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+    
+    header img {
+        float: right;
+        width: 30%;
+        margin: 0 20px  ;
+    }
+
+    .project {
+        width: 50%;
+        float: left;
+    }
+
+    .contact-card {
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        padding-top: 15px;
+    }
+
+}
+
+
+@media (min-width: 1024px) {
+
+}
 
 /******************************
 
