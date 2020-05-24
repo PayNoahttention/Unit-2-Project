@@ -2,12 +2,109 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
 /******************************
 
         MAIN ELEMENTS
 
 ******************************/
 
-.body{
+body {
+    font-family: 'Barlow', sans-serif;
+    letter-spacing: .05em;
+}
+
+header {
+    text-align: center;
+    padding: 0 20px;
 
 }
+
+header img {
+    max-width: 80%;
+}
+
+.main-nav {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.main-nav li {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+main {
+    text-align: center;
+}
+
+main img {
+    max-width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 25px 30px;
+    border-top: solid lightslategray 1px;
+    margin: 20px
+}
+
+footer ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+footer li {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.name{
+    float: left;
+    margin-right: 20px;
+}
+
+.toTop {
+    float: right;
+}
+/******************************
+
+        Link Stuff
+
+******************************/
+
+a:link {
+    text-decoration: none;
+    color: lightslategray;
+}
+
+a:visited {
+    color: lightslategray;
+}
+
+a:hover {
+    color: red;
+}
+
+
+/******************************
+
+        Clearfix
+
+******************************/
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
