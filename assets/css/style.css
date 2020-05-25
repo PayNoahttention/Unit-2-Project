@@ -68,7 +68,7 @@ footer ul {
     display: none;
 }
 
-.name{
+.name {
     float: left;
     margin: 0;
     
@@ -79,10 +79,28 @@ footer ul {
     margin: 0;
 }
 
+.project {
+    min-height: 360px;
+}
+
 .project strong {
     font-weight: bold;
     color: darkslategrey;
 }
+
+.contact-card {
+    margin-bottom: 20px;
+}
+.contact-card ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.contact-card li {
+    padding-top: 5px;
+}
+
 
 /******************************
         Link Stuff
@@ -117,6 +135,7 @@ a:hover {
     }
 
     header p {
+        padding-top: 50px;
         text-align: left;
     }
     
@@ -134,8 +153,12 @@ a:hover {
     .contact-card {
         display: inline-block;
         margin-top: 20px;
-        margin-bottom: 0px;
+        margin-bottom: 20px;
         padding-top: 15px;
+    }
+
+    .hobbies {
+        min-height: fit-content;
     }
 
     .toTop {
@@ -163,7 +186,8 @@ a:hover {
 @media (min-width: 1024px) {
 
     body {
-        max-width: 100%;
+        max-width: 1200px;
+        margin: auto;
     }
     
     main {
@@ -192,7 +216,7 @@ a:hover {
 
     header p {
         text-align: left;
-        padding: 0 40px;
+        padding: 120px 40px 0;
     }
     
     .project p {
