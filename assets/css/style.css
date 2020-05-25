@@ -19,7 +19,7 @@
 body {
     font-family: 'Barlow', sans-serif;
     letter-spacing: .05em;
-    background-color: whitesmoke;
+    background-color: rgb(243, 243, 243);
 }
 
 header {
